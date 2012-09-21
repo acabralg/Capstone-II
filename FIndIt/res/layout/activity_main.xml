@@ -4,11 +4,88 @@
     android:layout_height="match_parent" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:text="@string/categories"
         tools:context=".MainActivity" />
+
+    <CheckBox
+        android:id="@+id/cbBeauty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:text="@string/beauty" />
+
+    <CheckBox
+        android:id="@+id/cbMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cbBeauty"
+        android:text="@string/movies" />
+
+    <CheckBox
+        android:id="@+id/cbRestaurants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cbMovies"
+        android:text="@string/restaurants" />
+
+    <CheckBox
+        android:id="@+id/cbOutdoors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cbRestaurants"
+        android:text="@string/outdoors" />
+
+    <Button
+        android:id="@+id/btSearchActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="31dp"
+        android:layout_marginLeft="23dp"
+        android:text="@string/findIt" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cbOutdoors" >
+
+        <RadioButton
+            android:id="@+id/rbNearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/nearby" />
+
+        <RadioButton
+            android:id="@+id/rbSomewhereElse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/somewhereElse" />
+        
+        <EditText
+        android:id="@+id/tbLocation"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/cityState" />
+    </RadioGroup>
+
+    
 
 </RelativeLayout>
