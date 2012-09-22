@@ -37,7 +37,12 @@ public class FindItItemizedOverlay extends com.google.android.maps.ItemizedOverl
 	
 	public void addOverlay(OverlayItem overlay) {
 	    mOverlays.add(overlay);
-	    populate();
+	    //populate();
+	}
+	
+	public void Populate()
+	{
+		populate();
 	}
 	
 	@Override
